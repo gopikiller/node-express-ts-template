@@ -2,7 +2,7 @@ import express, { Application, ErrorRequestHandler, NextFunction, Request, Respo
 
 import createHttpError from 'http-errors';
 import dotenv from 'dotenv';
-import { route } from './Routes/';
+import { route } from '@Routes/index';
 
 // Boot express
 const app: Application = express();

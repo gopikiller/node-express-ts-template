@@ -14,9 +14,15 @@
     "esModuleInterop": true,
     /* Advanced Options */
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/*": ["*"],
+      "@Controllers/*": ["Controllers/*"],
+      "@Routes/*": ["Routes/*"],
+      "@Utils/*": ["Utils/*"],
+    }
   },
   "lib": ["es2015"],
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts", "src/**/*.json", ".env"],
   "exclude": ["node_modules"]
 }
