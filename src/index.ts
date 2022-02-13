@@ -8,7 +8,7 @@ import { route } from '@Routes/index';
 const app: Application = express();
 app.use(express.json());
 dotenv.config();
-const port = process.env.PORT ?? 5000;
+const port = process.env.PORT || 5000;
 
 // Application routing
 app.use(route);
